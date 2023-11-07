@@ -1,0 +1,15 @@
+public class MathOperation {
+
+    private int age;
+
+    @Math(num1 = 100, num2 = 200)
+    public int mathSum(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public static void main(String[] args) throws Exception {
+        MathOperation mathOperation = new MathOperation();
+        Method method = mathOperation.getClass().getMethod("mathSum", int.class, int.class);
+
+       
+    }
